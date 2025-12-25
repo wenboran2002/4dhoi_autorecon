@@ -126,7 +126,7 @@ This will create:
 
 5. HOI pose alignment:
    ```bash
-   python hoi_pose.py --video_dir ./demo --_regressor_path ./J_regressor.pt
+   python hoi_pose.py --video_dir ./demo --j_regressor_path ./J_regressor.pt
    ```
 
 After reconstruction, the demo folder should look like this:
