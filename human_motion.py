@@ -82,12 +82,12 @@ def parse_args_to_cfg():
         "--video_dir",
         type=str,
         required=True,
-        help="Folder containing video0.mp4",
+        help="Folder containing video.mp4",
     )
     args = parser.parse_args()
 
-    # Always use video0.mp4
-    video_path = Path(args.video_dir) / "video0.mp4"
+    # Always use video.mp4
+    video_path = Path(args.video_dir) / "video.mp4"
     assert video_path.exists(), f"Video not found at {video_path}"
 
     length, width, height = get_video_lwh(video_path)
