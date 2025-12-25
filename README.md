@@ -133,7 +133,7 @@ After reconstruction, the demo folder should look like this:
 
 ```text
 ./demo/
-├── frames/                     # extracted RGB frames from video0.mp4
+├── frames/                     # extracted RGB frames from video.mp4
 │   ├── 00000.jpg
 │   ├── 00001.jpg
 │   ├── 00002.jpg
