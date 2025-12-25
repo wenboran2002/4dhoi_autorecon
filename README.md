@@ -6,6 +6,15 @@ This repository is a component of the implementation for the paper "Efficient an
 
 This pipeline handles 4D Human-Object Interaction (HOI) Automatic Reconstruction, including object mesh generation and full 4D HOI alignment.
 
+
+## 🚀 To Do
+
+[x] Release reconstruction pipeline
+
+[ ] Release visualization vode
+
+[ ] Release sam3d-body hand pose
+
 ### 🧰 Data Preparation
 
 1. Download the demo file from [Google Drive](https://drive.google.com/uc?export=download&id=18-FiQL4Ew7G7_iyc_yMmcAajYKKBvQch) and place it in ./demo.
