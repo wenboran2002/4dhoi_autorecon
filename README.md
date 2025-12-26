@@ -78,7 +78,7 @@ This will create:
 3. Export the object mesh:
 
    ```bash
-   python make_obj_org.py --video_dir ./demo
+   python make_obj_org.py --video_dir ./demo --config "your config path"
    ```
 
    Output:

@@ -40,9 +40,6 @@ if str(NOTEBOOK_DIR) not in sys.path:
 from inference import Inference, load_image, load_single_mask
 from sam3d_objects.data.dataset.tdfy.transforms_3d import compose_transform
 
-tag = "hf-download"
-config_path = f"/inspire/ssd/project/robot-reasoning/xiangyushun-p-xiangyushun/jiaxin/ckpts/checkpoints/{tag}/checkpoints/pipeline.yaml"
-inference = Inference(config_path, compile=False)
 
 def _to_numpy(x):
     if isinstance(x, torch.Tensor):
@@ -120,7 +117,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--video_dir", type=str, required=True)
     parser.add_argument("--select_index", type=int, default=0)
+    parser.add_argument("--config", type=str)
     args = parser.parse_args()
+    
+    tag = "hf-download"
+    config_path = f"{args.config}/{tag}/checkpoints/pipeline.yaml"
+    inference = Inference(config_path, compile=False)
 
     frame_dir = os.path.join(args.video_dir, "frames")
     mask_dir = os.path.join(args.video_dir, "mask_dir")
